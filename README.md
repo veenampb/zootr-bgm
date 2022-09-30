@@ -12,6 +12,9 @@ https://www.twitch.tv/videos/1605195329
 - Resumes current BGM when traversing between two areas that share a BGM
 - Unique BGMs for areas that normally share a BGM or have no BGM
 
+**BGM List:**  
+https://docs.google.com/spreadsheets/d/1zch0nmiAK3z5-QTsnKhWeNjks3HI__LIvfeCjPKedzg/edit#gid=0
+
 ## Limitations
 - No fanfare support at this time except for in a couple very specific cases. Sorry!
 
