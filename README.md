@@ -19,7 +19,7 @@ https://www.twitch.tv/videos/1605195329
 Requires the following to be installed:
 
 **Custom BizHawk Installer**  
-https://wiki.ootrandomizer.com/index.php?title=Multiworld
+https://wiki.ootrandomizer.com/index.php?title=Multiworld#Download_the_Custom_Bizhawk_Installer
 
 Some of the files and folders in the Lua directory of the installation are prerequisites for this script. In particular:
 - *ltn12.lua*
