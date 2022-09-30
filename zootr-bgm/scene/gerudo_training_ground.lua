@@ -1,0 +1,5 @@
+local GERUDO_TRAINING_GROUND = {
+    ID = 11,
+}
+
+return GERUDO_TRAINING_GROUND
