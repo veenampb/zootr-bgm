@@ -15,13 +15,13 @@ Interactivity with foobar2000 is achieved using the beefweb plugin to allow the 
 ## Requirements
 Requires the following to be installed:
 
-**foobar2000**
+**foobar2000**  
 https://www.foobar2000.org
 
-**beefweb (for foobar2000)**
+**beefweb (for foobar2000)**  
 https://github.com/hyperblast/beefweb
 
-**vgmstream (for foobar2000)**
+**vgmstream (for foobar2000)**  
 https://github.com/vgmstream/vgmstream
 
 **vgmstream** is recommended here specifically for supporting audio formats that loop. Any audio format that loops indefinitely in foobar2000 should work perfectly fine with this script.
@@ -49,7 +49,7 @@ When generating a seed you'll want to go into the SFX tab and disable both **Bac
 
 ## Creating/editing playlist settings in the script window
 1. Click on the **Browse** button.
-2. In the Open window select and open the .txt file you wish write to. If you want to start completely from scratch create a new .txt file and type **VOLUME=0** into it and save it.
+2. In the Open window select and open the .txt file you wish write to. If you want to start completely from scratch create a new .txt file and type `VOLUME=0` into it, then save it.
 3. Click on any of the buttons at the bottom of the **Media Player Controller for OoTR** window to open a window with a list of tracks that match the button category.
 4. In each window specify the track number you wish to use from your foobar2000 playlist for each respective track. Click on the **Save** button when finished in each respective window.
 5. When finished with the playlist click on the **Save settings to this file** button in the main window to write to your .txt file.
