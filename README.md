@@ -4,6 +4,10 @@ This script will read certain addresses in the RAM while running Ocarina of Time
 Interactivity with foobar2000 is achieved using the beefweb plugin to allow the media player to act as a web server and listen for any incoming XMLHttpRequests.
 
 ## Preview
+**Setup & Feature Demonstration:**  
+https://youtu.be/t3BzlwPoYhU
+
+**Playthrough:**  
 https://www.twitch.tv/videos/1605195329
 
 ## Features
