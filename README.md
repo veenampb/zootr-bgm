@@ -21,6 +21,7 @@ https://docs.google.com/spreadsheets/d/1zch0nmiAK3z5-QTsnKhWeNjks3HI__LIvfeCjPKe
 
 ## Limitations
 - No fanfare support at this time except for in a couple very specific cases. Sorry!
+- Shuffling overworld entrances can cause some oddities when traveling between areas due to the game's memory updating its values between scenes differently. Every other entrance shuffle should work without issue, though.
 
 ## Requirements
 Requires the following to be installed:
@@ -33,6 +34,10 @@ Some of the files and folders in the Lua directory of the installation are prere
 - *mime.lua*
 - *socket.lua*
 - `/socket`
+
+If you have a preferred version of BizHawk you can copy these files into the *Lua* directory of your existing BizHawk installation and the script will most likely work just fine as these are simply extension libraries for Lua. This installer is recommended solely because it both contains the prerequisites for this script to work and because it's a trusted source linked in the randomizer wiki.
+
+Copying the Lua files and directories listed above to the *Lua* directory of another BizHawk installation is confirmed to work across any BizHawk version ranging from 2.3 to 2.8.
 
 **foobar2000**  
 https://www.foobar2000.org
@@ -80,7 +85,7 @@ When generating a seed you'll want to go into the SFX tab and disable both **Bac
 3. If the playlist import was successful click on the **Apply Changes and Play Music** button.
 
 ## Caveats
-- This script *does* have the ability to work at the same time as the script used for Multiworld, but use it at your own risk.
+- This script *does* have the ability to work at the same time as the Lua script used for Multiworld, but use it at your own risk.
 - Open foobar2000 **before** running the script in BizHawk. Otherwise, the script will attempt to interact with foobar2000 right after opening and may end up causing the emulator to stutter drastically until foobar2000 is opened or the Lua Console is closed.
 - The script will use the playlist identified by beefweb as *p1*. If foobar2000 isn't switching tracks try closing every playlist you currently have open (these are usually visible as tabs), close foobar2000 completely, then open it again. The first playlist should now be using the internal ID the script is looking for. If you don't use foobar2000 often and want to get around this you can keep your playlists open in other tabs and copy their contents into the first playlist whenever you want to switch out tracks.
 - As long as beefweb is installed the media player controller instance beefweb hosts will always be accessible from `http://localhost:8880` in your web browser while foobar2000 is open. The script needs this to control the media player, but keep this in mind if you no longer need it in the future and intend to keep using foobar2000.
