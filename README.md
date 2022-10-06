@@ -50,7 +50,7 @@ https://github.com/vgmstream/vgmstream
 
 **vgmstream** is recommended here specifically for supporting audio formats that loop. Any audio format that loops indefinitely in foobar2000 should work perfectly fine with this script.
 
-I recommend using [LoopingAudioConverter](https://github.com/libertyernie/LoopingAudioConverter) if you wish to create your own custom BGMs. In instances where the BGM should only play once I typically leave a couple seconds of silent space at the end of the BGM and loop that.
+I recommend using [LoopingAudioConverter](https://github.com/libertyernie/LoopingAudioConverter) if you wish to create looping versions of your own custom BGMs. You can specify which range of samples in an audio file to loop between. In instances where the BGM should only play once I typically edit the audio file to have a couple seconds of silence at the end and loop that so that foobar2000 will loop complete silence until a BGM change is triggered in-game.
 
 ## Installing foobar2000 plugins
 1. Download each plugin's respective *.fb2k-component* file from the latest release on their respective GitHub pages (usually found in the right sidebar).
