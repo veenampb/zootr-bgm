@@ -116,7 +116,6 @@ function changeTrack(value)
             -- Send track and volume change requests to the media player
             STATE.setIsPaused(false)
             PLAYER.changeTrack(next_track)
-            setVolume(volumeLimit.max)
 
             -- Determine if we're returning to a previous area and need to resume the BGM
             local isResumingBGM = not BGM.doesNotResume(bgm_hex)
@@ -128,6 +127,8 @@ function changeTrack(value)
                 STATE.setResumeTrackPosition(track_position_previous)
                 -- We need to add a delay before the position change since it doesn't play well with changeTrack
                 STATE.setAudioBufferFrames(RESUME_BUFFER_FRAMES)
+            else
+                setVolume(volumeLimit.max)
             end
 
             -- Save the previous BGM's data, then update our stored value to the new one
