@@ -30,5 +30,6 @@ SCENE.TOWER_COLLAPSE = require('./zootr-bgm/scene/tower_collapse')
 SCENE.TOWER_EXTERIOR = require('./zootr-bgm/scene/tower_exterior')
 SCENE.WATER_TEMPLE = require('./zootr-bgm/scene/water_temple')
 SCENE.WINDMILL = require('./zootr-bgm/scene/windmill')
+SCENE.ZORAS_FOUNTAIN = require('./zootr-bgm/scene/zoras_fountain')
 
 return SCENE

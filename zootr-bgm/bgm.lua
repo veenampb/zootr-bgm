@@ -485,6 +485,16 @@ local BGM_TABLE = {
         id = 'SPIRIT_TEMPLE_CHILD',
         isCustom = true,
     },
+    ['0x89'] = {
+        name = 'Zora\'s Fountain (child)',
+        id = 'ZORAS_FOUNTAIN_CHILD',
+        isCustom = true,
+    },
+    ['0x8A'] = {
+        name = 'Zora\'s Fountain (adult)',
+        id = 'ZORAS_FOUNTAIN_ADULT',
+        isCustom = true,
+    },
 }
 
 -- Sequence ID to hex value map table (used to quickly obtain sequence hex values in functions)
@@ -729,7 +739,11 @@ end
 
 -- Get the hex ID of a custom BGM that should play in place of the supplied sequence hex
 function BGM.getCustomBGMHex(bgm_hex, bgm_scene_hex)
-    if (isNightDeathMountainTrail(bgm_hex, bgm_scene_hex)) then
+    if (isZorasFountainChild(bgm_hex)) then
+        return SEQ.ZORAS_FOUNTAIN_CHILD
+    elseif (isZorasFountainAdult(bgm_hex)) then
+        return SEQ.ZORAS_FOUNTAIN_ADULT
+    elseif (isNightDeathMountainTrail(bgm_hex, bgm_scene_hex)) then
         return SEQ.NIGHT_DEATH_MOUNTAIN_TRAIL
     elseif (isNightLakeHylia(bgm_hex, bgm_scene_hex)) then
         return SEQ.NIGHT_LAKE_HYLIA
@@ -974,6 +988,22 @@ function isZorasDomainAdult(bgm_hex)
     local isZorasDomainBGM = bgm_hex == SEQ.ZORAS_DOMAIN
     local isAdult = OOT.isAdult()
     return isZorasDomainBGM and isAdult
+end
+
+function isZorasFountain()
+    local currentScene = OOT.getScene()
+    local isZorasFountainScene = currentScene == SCENE.ZORAS_FOUNTAIN.ID
+    return isZorasFountainScene
+end
+
+function isZorasFountainChild()
+    local isChild = OOT.isChild()
+    return isZorasFountain() and isChild
+end
+
+function isZorasFountainAdult()
+    local isAdult = OOT.isAdult()
+    return isZorasFountain() and isAdult
 end
 
 function isIceCavernMiniBoss(bgm_hex, bgm_scene_hex)
